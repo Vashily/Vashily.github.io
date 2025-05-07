@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="smansa.png">
+  </head>
+<body>
+  
+  <div class="background-container">
+    <table class="main-table" align="center" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="header" colspan="2">
+          <h1>WEB JURNAL</h1>
+          <h2>SMA NEGERI 1 PALOPO</h2>
+          <p style="font-size: smaller;"> Platform Informasi SMANSA PALOPO
+</p>
+        </td>
+      </tr>
+  
+
+      <tr>
+        <td class="sidebar">
+          <ul>
+              <li><a href="base.html"><img src="26508-48x48x32.png" alt="Home" width="32" height="32" style="vertical-align:middle; margin-left:-5px;">Home</a></li>
+              <li id="galeri-menu" style="text-decoration: underline;
+              color: #d32f2f; /* red */
+              font-weight: bold; cursor: pointer;">
+                <img src="26507-48x48x8.png" alt="Images" width="32" height="32" style="vertical-align:middle; margin-left:-5px;">Galeri▼ 
+              </li>
+              <ul id="galeri-categories" style="display:none; margin-left: 35px; margin-top: -25px; list-style-type: disc; font-size: smaller;">
+                <li><a href="image.html">General</a></li>
+                <li><a href="image2.html">Penanaman Pohon</a></li>
+                <li><a href="image3.html">Peringatan Hari Kartini</a></li>
+              </ul>
+              <li><a href="blog.html"><img src="26514-48x48x32.png" alt="Blog" width="32" height="32" style="vertical-align:middle; margin-left:-5px;">Artikel</a></li>
+              <li><a href="information.html"><img src="26516.png" alt="Contact" width="32" height="32" style="vertical-align:middle; margin-left:-5px;">Kontak</a></li>
+              <li><a href="feedback.html"><img src="26522-48x48x32.png" alt="Feedback" width="32" height="32" style="vertical-align:middle; margin-left:-5px;">Feedback</a></li>
+              <li><a href="products.html"><img src="978-256x256x8.png" alt="Feedback" width="32" height="32" style="vertical-align:middle; margin-left:-5px;">Hiburan</a></li>
+              <label class="label" style="margin-top: -15px;"><img src="57-48x48x32.png"alt="Feedback" width="32" height="32" style="vertical-align:middle; margin-left:-5px;">Cari Artikel</label>
+              <li style="text-align:center; margin: 10px 0;">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <div style="display: flex; width: 100%; justify-content: flex-start;"></div>
+                    <input type="text" id="searchInput" placeholder="Carilah Artikel..." onkeyup="searchArticles()" style="padding:2px 6px; width:200px; font-size:12px; text-align:left; right: -90px;">
+                  </div>
+                </div>
+              </li>
+                <div style="display: flex; justify-content: flex-start; width: 100%; margin-top: 8px;">
+                  <img src="Logo Pemprov dan Disdik.png" alt="SMAN 1 Palopo Logo" style="width: 155px; height:auto; border-radius:8px; margin-left:0; margin-top: -40px;">
+                </div>
+            </li>
+          </ul>
+        </td>
+        
+        </td>
+      <td class="content" style="background: #f7fafd; border-radius: 18px; border: 2px solid #b3c6d7; padding: 32px 18px;">
+        <h2 style="text-align: center;">INFORMASI KONTAK</h2><br>
+        <h3 style="text-align:center; font-family:'Segoe UI', Arial, sans-serif; letter-spacing:5px; color:#2a5d84; text-shadow:1px 1px 4px #b3c6d7;">SOCIAL MEDIA</h3>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 30px;">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/free-youtube-logo-icon-download-in-svg-png-gif-file-formats--social-media-70-flat-icons-color-pack-logos-432560.png" alt="YouTube Channel" width="64" height="64" style="border-radius: 8px;">
+          <a href="https://www.youtube.com/@sma1palopo" target="_blank" style="font-size: 1.2em; color: #e53935; text-decoration: none; font-weight: bold;">
+            Channel Youtube SMA Negeri 1 Palopo
+          </a>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 30px;">
+          <img src="https://images.seeklogo.com/logo-png/43/2/instagram-new-2022-logo-png_seeklogo-438252.png" alt="Instagram Channel" width="64" height="64" style="border-radius: 8px;">
+          <a href="https://www.instagram.com/upt_sman_1_palopo/" target="_blank" style="font-size: 1.2em; color: #973cb3; text-decoration: none; font-weight: bold;">
+            Akun Instagram SMA Negeri 1 Palopo
+          </a>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 30px;">
+          <img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="Tiktok Channel" width="64" height="64" style="border-radius: 8px;">
+          <a href="https://www.tiktok.com/@sman_1_palopo" target="_blank" style="font-size: 1.2em; color: #000; text-decoration: none; font-weight: bold;">
+            Akun Tiktok SMA Negeri 1 Palopo
+          </a>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 30px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png" alt="Tiktok Channel" width="64" height="64" style="border-radius: 8px;">
+          <a href="https://www.facebook.com/people/New-Halaman-Resmi-SMAN-1-Palopo/61556797175961/" target="_blank" style="font-size: 1.2em; color: #545fc2; text-decoration: none; font-weight: bold;">
+            Akun Facebook SMA Negeri 1 Palopo
+          </a>
+        </div>
+        <br>
+    </td>
+    </tr>
+
+    <tr>
+      <td class="footer" colspan="2">
+      <span style="font-size:0.9em; color:#000000;">
+        &copy; 2025 <a href="random.html" style="color:#000000; text-decoration:underline;">Muh. Jibril Mulia</a>.
+        <P> Untuk 1 Sekolah 1 Programmer</P>
+      </span>
+      </td>
+    </tr>
+
+    
+  </table>
+  </div>
+
+ 
+
+  <script src="javascript.js"></script>
+
+  <div class="footer2">Alamat Sekolah: JL. Imam Bonjol, No. 4, Sabbangparu, Wara Utara, Luminda, Palopo, Kota Palopo, Sulawesi Selatan 91913
+  </div>
+</body>
+</html>

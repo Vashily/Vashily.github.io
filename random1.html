@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   <style>
+    h1{
+        text-align: center;
+    }
+    
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+    }
+    div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto; 
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 25%;
+    margin: 2px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 55%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+  
+}
+
+#jstext
+{
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+}
+
+
+  </style>
+<br><br>
+<body>
+    <h1 style="font-family: 'Times New Roman', Times, serif;font-size: larger;">Site of stuff</h1>
+    <p style="text-align: center;font-family:'Times New Roman', Times, serif, Courier, monospace; font-style: normal; font-size: smaller;">
+    This is for stuff that i have to try doing and learn JS 
+    for or <br> or something like that </p>
+    
+    <img src="https://static.wikia.nocookie.net/dayz_gamepedia/images/9/96/Flag_-_Chernarus.png" width="512" height="256" class="center">
+    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align:center;">THIS IS A FLAG</p>
+    <br>
+    <p id="demo" style="font-family: 'Times New Roman', Times, serif; text-align: center;">This is where you would click a button and it would change something.</p>
+    <button class="center" type="button" onclick='document.getElementById ("demo").innerHTML="Well done!"'
+    >Click!</button>'
+    <br>
+    <br>
+    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align:center;">This is a user input test</p>
+    <div style="text-align: center;">
+    <label>username:</label>
+    <input id="demo2"><br><br>
+    <button id="submit">SEND</button>
+    </div>
+    <br>
+    <p id="demo3" style="text-align: center"> Type your name! </p>
+    <p id="demo6" style="text-align: center"> </p>
+    
+    <script src="main.js">
+    </script>
+
+<br>
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://pbs.twimg.com/media/GoRb_1xbYAIBewa?format=jpg&name=large">
+        <img src="https://pbs.twimg.com/media/GoRb_1xbYAIBewa?format=jpg&name=large" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">My work, about the Chernarussian Defense Forces</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://pbs.twimg.com/media/Fn_QI5uWAAAEcvU?format=jpg&name=4096x4096">
+        <img src="https://pbs.twimg.com/media/Fn_QI5uWAAAEcvU?format=jpg&name=4096x4096" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Brandon's work, not mine.</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://pbs.twimg.com/media/Goiors0XQAA04_Q?format=jpg&name=large">
+        <img src="https://pbs.twimg.com/media/Goiors0XQAA04_Q?format=jpg&name=large" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">My work, about the Scimitar Regiment.</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://pbs.twimg.com/media/GoF-zBHbcAA8tls?format=jpg&name=large">
+        <img src="https://pbs.twimg.com/media/GoF-zBHbcAA8tls?format=jpg&name=large" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">My work, recreation of an image brandon posted on twitter.</div>
+    </div>
+  </div>
+<br><br><br><br>
+  
+
+<div style="text-align: center">
+  <br/><br/>
+  <p>Variabel 1 + Variabel 2</p>
+  <label for="d2">Variable 1</label>
+  <input type="number" id="d2">
+  <br/><br/>
+  <label for="d4">Variable 2</label>
+  <input type="number" id="d4">
+  <br/><br/>
+  <button id="count">Insert</button>
+  <br/><br/>
+  <label for="result1">Result: </label>
+  <span id="result1"></span>
+</div>
+
+<script>
+  const hasil = document.getElementById("count");
+  const var1Input = document.getElementById("d2");
+  const var2Input = document.getElementById("d4");
+  const result = document.getElementById("result1");
+
+  function hasil1() {
+    const var1Value = Number(var1Input.value);
+    const var2Value = Number(var2Input.value);
+    const resultValue = var1Value + var2Value;
+    result.innerText = resultValue;
+  }
+
+  hasil.addEventListener("click", hasil1);
+</script>
+
+<div style="text-align: center">
+<p id="yearmonthdaydate"></p>
+</div>
+
+<script>
+const d = new Date();
+document.getElementById("yearmonthdaydate").innerHTML = (" Day " + d.getDate() + ", Month " + d.getMonth () + ", Year " + d.getFullYear ())
+</script>
+<div style="text-align: center;">
+<button onclick="myButton1()">Click here to totally delete stuff!</button>
+</div>
+
+<script>
+function myButton1() {
+  var text2 = "wanna go somewhere?";
+  if (window.confirm(text2) == true) {
+    text2 = "See ya!"
+    console.log ("Goodbye!");
+    setInterval(() => {
+      window.location.assign ("https://google.com");
+    }, 5000);
+  } else {
+    text2 = "You aint going? awh thats sad :()"
+    console.log ("Stayed here i guess")
+  }
+  document.getElementById("dialogconfirm").innerHTML = text2;
+  }
+</script>
+<p id="dialogconfirm" style="text-align: center"></p>
+
+
+</html>      
